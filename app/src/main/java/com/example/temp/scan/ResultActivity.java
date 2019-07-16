@@ -24,6 +24,7 @@ import java.io.BufferedOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 public class ResultActivity extends AppCompatActivity {
@@ -63,7 +64,8 @@ public class ResultActivity extends AppCompatActivity {
         resultPDF.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                ToPdf();
+                finish();
             }
         });
 
@@ -82,6 +84,11 @@ public class ResultActivity extends AppCompatActivity {
         });
         titleMid.setText("图像结果");
         titleRight.setText("");
+    }
+
+    public void ToPdf(){
+
+        Toast.makeText(ResultActivity.this,"已保存为PDF", Toast.LENGTH_SHORT).show();
     }
 
 }

@@ -205,13 +205,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void initPDFs() {
-        for (int i=0;i<2;i++) {
-            UsePDF apple = new UsePDF("Apple", R.drawable.pdf_bg);
+            UsePDF apple = new UsePDF("一种复杂版面扭曲文档图像快速矫正方法", R.drawable.catch_bg,"在对复杂版面扭曲文档图像进行OCR识别时,识别率较低。针对这类文档图像提出一种基于形态学文本行定位的扭曲校正方法。首先根据形态学特征在复杂版面中定位文本行,区分处理文字区域和非文字区域,利用文本行信息提取文本线;再以文本线为基准利用窗口扫描法进行文字行校正,最终重构图像。实验结果表明,该方法校正效果明显,对于复杂版面的扭曲文档图像有较好的校正效果,校正后识别率大幅度提高。","2019/04/23","韩梅梅");
             PDFList.add(apple);
-            UsePDF banana = new UsePDF("banana", R.drawable.pdf_bg);
+            UsePDF banana = new UsePDF("文档图像纠偏算法的研究与分析", R.drawable.catch_bg,"提出了一种效率很高的文档图像纠偏算法,即利用文档图像的水平投影值,得到水平投影值的维格纳-威利分布。根据维格纳-威利分布的极值的最大值得到偏斜角度,实验结果验证了算法的有效性。","2019/05/10","李雷");
             PDFList.add(banana);
-            UsePDF grape = new UsePDF("grape", R.drawable.pdf_bg);
+            UsePDF grape = new UsePDF("变形文档图像的矫正方法研究", R.drawable.catch_bg,"针对文档表面易发生弯曲变形从而影响文档图像识别率这一问题,通过建模恢复文档表面形状,并运用参数化插值的方法实现了变形文档图像的矫正。本文讨论了基本理论及方法,并对算法的设计及实验中开发的平台进行了介绍,实验数据表明本方法可以有效的实现文档图像的矫正。","2015/05/12","张鹏");
             PDFList.add(grape);
-        }
     }
 }

@@ -36,6 +36,9 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.ViewHolder> {
         UsePDF usePDF = mPDFList.get(position);
         holder.PDFImage.setImageResource(usePDF.getImageId());
         holder.PDFName.setText(usePDF.getName());
+        holder.PDFContent.setText(usePDF.getContent());
+        holder.PDFDate.setText(usePDF.getDate());
+        holder.PDFAuthor.setText(usePDF.getAuthor());
     }
 
     @Override
@@ -47,12 +50,18 @@ public class PDFAdapter extends RecyclerView.Adapter<PDFAdapter.ViewHolder> {
         View PDFView;
         ImageView PDFImage;
         TextView PDFName;
+        TextView PDFContent;
+        TextView PDFDate;
+        TextView PDFAuthor;
 
         public ViewHolder(View view) {
             super(view);
             PDFView = view;
             PDFImage = (ImageView) view.findViewById(R.id.pdf_image);
             PDFName = (TextView) view.findViewById(R.id.pdf_name);
+            PDFContent = (TextView) view.findViewById(R.id.pdf_content);
+            PDFDate = (TextView) view.findViewById(R.id.pdf_time);
+            PDFAuthor = (TextView) view.findViewById(R.id.pdf_author);
         }
     }
 

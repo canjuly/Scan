@@ -11,7 +11,7 @@
 
 ## why do I develop Scan?
 
-* a job from my teacher, for a competition. But unfortunately, no good
+* a job from my teacher, for a competition. 
 
 ## How do I achieve these functions?
 

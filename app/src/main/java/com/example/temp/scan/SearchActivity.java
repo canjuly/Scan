@@ -55,9 +55,9 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     private void initPDFs() {
-        UsePDF apple = new UsePDF("Apple", R.drawable.pdf_bg);
+        UsePDF apple = new UsePDF("Apple", R.drawable.pdf_bg,"","","");
         PDFList.add(apple);
-        UsePDF banana = new UsePDF("banana", R.drawable.pdf_bg);
+        UsePDF banana = new UsePDF("banana", R.drawable.pdf_bg,"","","");
         PDFList.add(banana);
     }
 }
